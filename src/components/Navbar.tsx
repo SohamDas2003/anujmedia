@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { siteConfig, getWhatsAppLink } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,8 +14,6 @@ export default function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
-
-  const waLink = getWhatsAppLink();
 
   return (
     <>
@@ -58,14 +56,7 @@ export default function Navbar() {
           </nav>
 
           <div className="nav-cta">
-            <a
-              href={waLink}
-              className="btn btn-outline-dark"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WhatsApp Us
-            </a>
+            {/* WhatsApp temporarily disabled. */}
             <Link href="/contact" className="btn btn-signal">
               Get Free Proposal
             </Link>
@@ -108,15 +99,7 @@ export default function Navbar() {
             </Link>
           );
         })}
-        <a
-          href={waLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: "var(--signal)", marginTop: "12px" }}
-          onClick={() => setMobileOpen(false)}
-        >
-          WhatsApp Us &rarr;
-        </a>
+        {/* WhatsApp temporarily disabled. */}
       </div>
     </>
   );

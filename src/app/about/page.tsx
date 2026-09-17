@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig, getWhatsAppLink } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Why Choose Us & About",
@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const waLink = getWhatsAppLink();
-
   return (
     <>
       <section className="page-hero">
@@ -236,14 +234,7 @@ export default function AboutPage() {
               <Link href="/contact" className="btn btn-hero-primary">
                 Book Strategy Call
               </Link>
-              <a
-                href={waLink}
-                className="btn btn-outline-light"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat on WhatsApp
-              </a>
+              {/* WhatsApp temporarily disabled. */}
             </div>
           </div>
         </div>

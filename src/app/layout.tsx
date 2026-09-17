@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
 import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig } from "@/lib/config";
 import "./globals.css";
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${siteConfig.companyName} — ${siteConfig.tagline}`,
     description: siteConfig.description,
-    images: ["/og-image.png"],
+    images: [siteConfig.logo],
     type: "website",
   },
 };
@@ -57,7 +56,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <WhatsAppFloat />
+        {/* WhatsApp temporarily disabled. */}
         <ScrollReveal />
       </body>
     </html>

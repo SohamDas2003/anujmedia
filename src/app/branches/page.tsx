@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { siteConfig, getWhatsAppLink } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Our Offices — Delhi, Mumbai & Chandigarh",
@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function BranchesPage() {
-  const waLink = getWhatsAppLink();
-
   return (
     <>
       <section className="page-hero">
@@ -99,16 +97,7 @@ export default function BranchesPage() {
                 >
                   Contact Delhi &rarr;
                 </Link>
-                <a
-                  href={getWhatsAppLink(
-                    "Hi, I'd like to connect with the Delhi team."
-                  )}
-                  className="btn btn-outline-light"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WhatsApp
-                </a>
+                {/* WhatsApp temporarily disabled. */}
               </div>
             </div>
 
@@ -181,16 +170,7 @@ export default function BranchesPage() {
                 >
                   Contact Mumbai &rarr;
                 </Link>
-                <a
-                  href={getWhatsAppLink(
-                    "Hi, I'd like to connect with the Mumbai team."
-                  )}
-                  className="btn btn-outline-light"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WhatsApp
-                </a>
+                {/* WhatsApp temporarily disabled. */}
               </div>
             </div>
 
@@ -263,16 +243,7 @@ export default function BranchesPage() {
                 >
                   Contact Chandigarh &rarr;
                 </Link>
-                <a
-                  href={getWhatsAppLink(
-                    "Hi, I'd like to connect with the Chandigarh team."
-                  )}
-                  className="btn btn-outline-light"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WhatsApp
-                </a>
+                {/* WhatsApp temporarily disabled. */}
               </div>
             </div>
           </div>
@@ -348,14 +319,7 @@ export default function BranchesPage() {
               <Link href="/contact" className="btn btn-hero-primary">
                 Start Strategy Conversation
               </Link>
-              <a
-                href={waLink}
-                className="btn btn-outline-light"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chat on WhatsApp
-              </a>
+              {/* WhatsApp temporarily disabled. */}
             </div>
           </div>
         </div>

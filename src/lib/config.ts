@@ -11,8 +11,8 @@ export const siteConfig = {
   tagline: "Pan-India Digital Marketing & Growth Partner",
   description:
     "Full-service digital marketing agency with on-ground teams in Delhi, Mumbai and Chandigarh. SEO, Paid Media, Social, Web & Branding.",
-  logo: "/logo.png",
-  favicon: "/favicon.png",
+  logo: "/logo.png?v=2",
+  favicon: "/logo.png?v=2",
   whatsappNumber: "917738137483",
   email: "info@anujmedia.in",
   branches: [

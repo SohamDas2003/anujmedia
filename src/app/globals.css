@@ -227,7 +227,7 @@ header.nav {
 }
 
 .logo-img {
-  max-height: 40px;
+  max-height: 54px;
   width: auto;
   object-fit: contain;
 }
@@ -993,6 +993,9 @@ footer {
 }
 
 .footer-brand .logo {
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
   color: #fff;
 }
 

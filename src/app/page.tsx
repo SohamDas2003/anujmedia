@@ -1,11 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
-import { siteConfig, getWhatsAppLink } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 
 export default function HomePage() {
-  const waLink = getWhatsAppLink();
-
   return (
     <>
       {/* Hero Section */}
@@ -83,14 +81,7 @@ export default function HomePage() {
                 <Link href="/contact" className="btn btn-hero-primary">
                   Get Free Proposal
                 </Link>
-                <a
-                  href={waLink}
-                  className="btn btn-outline-light"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Chat on WhatsApp
-                </a>
+                {/* WhatsApp temporarily disabled. */}
               </div>
               <div className="hero-doodle-arrow" aria-hidden="true">
                 <svg

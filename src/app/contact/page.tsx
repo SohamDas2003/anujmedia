@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import ContactFormContainer from "./ContactFormContainer";
-import { siteConfig, getWhatsAppLink } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Contact Us & Get Free Proposal",
@@ -10,8 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const waLink = getWhatsAppLink();
-
   return (
     <>
       <section className="page-hero">
@@ -93,14 +91,7 @@ export default function ContactPage() {
                 >
                   WhatsApp / Phone
                 </div>
-                <a
-                  href={waLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontWeight: 600, color: "var(--signal)" }}
-                >
-                  +91 7738137483 (Instant Chat)
-                </a>
+                {/* WhatsApp temporarily disabled. */}
               </div>
             </div>
 

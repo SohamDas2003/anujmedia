@@ -1,11 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, getWhatsAppLink } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const waLink = getWhatsAppLink();
-
   return (
     <footer>
       <div className="wrap">
@@ -57,14 +55,7 @@ export default function Footer() {
             <h4>Get In Touch</h4>
             <div className="footer-links">
               <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-              <a
-                href={waLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "var(--signal)", fontWeight: 600 }}
-              >
-                Chat on WhatsApp &rarr;
-              </a>
+              {/* WhatsApp temporarily disabled. */}
               <Link
                 href="/contact"
                 style={{ color: "var(--text-inverse)", marginTop: "6px" }}
