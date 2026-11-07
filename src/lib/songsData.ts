@@ -20,10 +20,12 @@ export interface SongEntity {
   name: string;
   logo: string;
   category: "Record Label" | "Production House" | "Audio Publishing" | "Recording Studio" | "Featured Artist" | "Indie & Fusion";
+  distributionRole: string;
   tagline: string;
   established: string;
   genre: string[];
   description: string;
+  promotionScope: string[];
   stats: SongStats;
   featuredSong: FeaturedSong;
   topTracks: string[];
@@ -37,14 +39,21 @@ export const musicCatalog: SongEntity[] = [
     name: "All Good Music",
     logo: "/logos/1.jpeg",
     category: "Record Label",
+    distributionRole: "Exclusive Digital Distribution & Playlist Promotion",
     tagline: "Pure Soundwaves & Soulful Melodies",
     established: "2021",
     genre: ["Contemporary Pop", "Indie Melodies", "Chillhop", "Acoustic"],
     description:
-      "All Good Music is an artist-first independent record label recognized for its gleaming gold vinyl aesthetic, pristine studio mastering, and soulful melodies that consistently break into global streaming algorithmic playlists.",
+      "All Good Music is an artist-first independent record label distributed and promoted globally by Anuj Media. We manage their complete DSP delivery pipeline, pitch their tracks directly to Spotify & Apple Music editorial curators, and drive algorithmic streaming momentum for their acoustic and soulful releases.",
+    promotionScope: [
+      "150+ DSP digital distribution (Spotify, Apple Music, JioSaavn)",
+      "Spotify Editorial & Algorithmic Playlist Pitching",
+      "Instagram Reels & YouTube Shorts audio seeding",
+      "Smart Link pre-save funnels & release analytics",
+    ],
     stats: {
-      streams: "45M+",
-      releases: "18 Tracks",
+      streams: "45M+ Promoted",
+      releases: "18 Distributed",
       chartPeak: "#4 Viral 50",
       listeners: "1.2M Monthly",
     },
@@ -52,9 +61,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Rhythm of Gold",
       artist: "Aarav & Simran",
       duration: "3:42",
-      streams: "14.8M",
+      streams: "14.8M Streams",
       year: "2024",
-      badge: "Trending Hit",
+      badge: "Promoted Hit (#4 Viral)",
     },
     topTracks: [
       "Rhythm of Gold",
@@ -76,14 +85,21 @@ export const musicCatalog: SongEntity[] = [
     name: "Leotech Media 89",
     logo: "/logos/2.jpeg",
     category: "Production House",
+    distributionRole: "YouTube Video Marketing & Club Circuit Distribution",
     tagline: "Roaring Beats & High-Voltage Power Anthems",
     established: "2019",
     genre: ["Desi Hip-Hop", "Punjabi Folk Trap", "Bass Heavy", "Live Acoustic"],
     description:
-      "Showcasing the iconic golden lion crest and vintage broadcast microphone, Leotech Media 89 is a powerhouse creative entertainment label producing thunderous beats, raw vocal deliveries, and high-budget cinematic visuals.",
+      "Representing the roaring golden lion emblem, Leotech Media 89 relies on Anuj Media for aggressive video promotion and digital song distribution. We run high-ROI YouTube discovery ad funnels, club DJ digital delivery, and regional Punjabi media campaigns that turn heavy bass anthems into viral street hits.",
+    promotionScope: [
+      "Targeted YouTube video discovery & pre-roll ad campaigns",
+      "Pan-India DJ & nightlife audio pool distribution",
+      "Punjab & Delhi NCR hyper-local influencer activations",
+      "Content ID & copyright protection management",
+    ],
     stats: {
-      streams: "72M+",
-      releases: "24 Tracks",
+      streams: "72M+ Views & Plays",
+      releases: "24 Distributed",
       chartPeak: "#2 Punjabi Top 50",
       listeners: "1.8M Monthly",
     },
@@ -91,9 +107,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Sher-E-Punjab",
       artist: "Harkirat Sandhu ft. Leo",
       duration: "3:15",
-      streams: "26.4M",
+      streams: "26.4M Views",
       year: "2024",
-      badge: "Club Sensation",
+      badge: "Promoted Club Sensation",
     },
     topTracks: [
       "Sher-E-Punjab",
@@ -115,14 +131,21 @@ export const musicCatalog: SongEntity[] = [
     name: "Trusted Tunes",
     logo: "/logos/3.jpeg",
     category: "Audio Publishing",
+    distributionRole: "Hi-Res Audio Distribution & OTT Sync Promotion",
     tagline: "High-Fidelity Audio Curated for the Next Generation",
     established: "2022",
     genre: ["Acoustic Pop", "Ambient Chill", "Bollywood Soft Rock", "Melodic EDM"],
     description:
-      "Crafted with golden headphones and acoustic frequencies, Trusted Tunes is dedicated to audiophile-grade mixing, sync-licensing for OTT films, and soothing acoustic compositions that resonate with millions on daily commutes and late nights.",
+      "Trusted Tunes is distributed through Anuj Media's premium audiophile network. We ensure loss-less Dolby Atmos ingestion across global DSPs, while actively promoting their catalog to OTT music supervisors and ad agencies looking for commercial sync licensing.",
+    promotionScope: [
+      "Dolby Atmos & Hi-Res lossless audio delivery",
+      "OTT series & commercial film synchronization pitching",
+      "Curated chill/study playlist network syndication",
+      "Multi-territory digital royalty tracking",
+    ],
     stats: {
-      streams: "38M+",
-      releases: "16 Tracks",
+      streams: "38M+ Promoted",
+      releases: "16 Distributed",
       chartPeak: "#1 Acoustic India",
       listeners: "950K Monthly",
     },
@@ -130,9 +153,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Echoes in the Rain",
       artist: "Kavya Sharma & Neel",
       duration: "4:05",
-      streams: "12.1M",
+      streams: "12.1M Streams",
       year: "2024",
-      badge: "Editor's Choice",
+      badge: "Distributed Single",
     },
     topTracks: [
       "Echoes in the Rain",
@@ -154,14 +177,21 @@ export const musicCatalog: SongEntity[] = [
     name: "Positive Studios",
     logo: "/logos/4.jpeg",
     category: "Recording Studio",
+    distributionRole: "Commercial Release Distribution & Radio Campaigning",
     tagline: "Where Raw Emotion Meets Acoustical Mastery",
     established: "2020",
     genre: ["Urban Soul", "Commercial Club", "Bollywood Pop", "Lo-Fi Waves"],
     description:
-      "Distinguished by its embossed golden musical note 'P' over acoustic soundwaves, Positive Studios provides top-tier tracking, vocal production, and Dolby Atmos audio mastering for leading artists and emerging independent voices.",
+      "Behind the iconic gold frequency 'P' logo is Positive Studios, whose audio catalog is distributed and promoted by Anuj Media. We take master recordings directly from their mixing consoles into national FM radio syndication, Spotify algorithmic streams, and brand-sponsored playlists.",
+    promotionScope: [
+      "National radio station submission & PR across Delhi & Mumbai",
+      "Digital DSP release scheduling & metadata enhancement",
+      "Social media trend seeding and lyric video campaigns",
+      "Commercial brand tie-ins & soundtrack integration",
+    ],
     stats: {
-      streams: "58M+",
-      releases: "32 Productions",
+      streams: "58M+ Promoted",
+      releases: "32 Distributed",
       chartPeak: "#5 National Top 100",
       listeners: "1.5M Monthly",
     },
@@ -169,9 +199,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Positive Vibe Only",
       artist: "Dev Chauhan ft. Ria",
       duration: "2:58",
-      streams: "19.3M",
+      streams: "19.3M Streams",
       year: "2024",
-      badge: "Radio Chartbuster",
+      badge: "Radio & Stream Hit",
     },
     topTracks: [
       "Positive Vibe Only",
@@ -193,14 +223,21 @@ export const musicCatalog: SongEntity[] = [
     name: "ME - Music Empire",
     logo: "/logos/5.jpeg",
     category: "Record Label",
+    distributionRole: "Global Catalog Distribution & Film Score Marketing",
     tagline: "Cinematic Soundscapes & Timeless Chartbusters",
     established: "2018",
     genre: ["Cinematic OST", "Sufi Rock Fusion", "Indie Pop", "Retro Wave"],
     description:
-      "Featuring the cinematic filmstrip reel and warm celestial glow, Music Empire produces larger-than-life compositions, timeless romantic singles, and background scores synced across web series and box-office productions.",
+      "Music Empire partners with Anuj Media for worldwide distribution and high-profile promotional campaigns. From web-series theme tracks to cinematic indie ballads, our marketing team expands their footprint across international streaming charts and film communities.",
+    promotionScope: [
+      "Worldwide cross-platform audio & music video distribution",
+      "Netflix & Amazon Prime web-series sync representation",
+      "Global South Asian diaspora ad campaigns (UK, US, Canada)",
+      "Digital rights collection and master licensing",
+    ],
     stats: {
-      streams: "85M+",
-      releases: "42 Tracks",
+      streams: "85M+ Promoted",
+      releases: "42 Distributed",
       chartPeak: "#3 Global Asian Charts",
       listeners: "2.4M Monthly",
     },
@@ -208,9 +245,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Empire Groove",
       artist: "Sameer Sen & The Collective",
       duration: "3:30",
-      streams: "31.2M",
+      streams: "31.2M Streams",
       year: "2023",
-      badge: "OTT Hit Anthem",
+      badge: "Promoted OST Hit",
     },
     topTracks: [
       "Empire Groove",
@@ -232,14 +269,21 @@ export const musicCatalog: SongEntity[] = [
     name: "Sunny Camra",
     logo: "/logos/6.jpeg",
     category: "Featured Artist",
+    distributionRole: "Exclusive Artist Marketing, Reels Seeding & Distribution",
     tagline: "Trendsetting Punjabi Urban & Swag Anthems",
     established: "Debut 2020",
     genre: ["Punjabi Urban", "Desi Hip-Hop", "Commercial Party", "Street Pop"],
     description:
-      "An electric powerhouse in modern Punjabi music, Sunny Camra blends infectious swag, memorable hooks, and high-energy street cadence. His tracks consistently ignite viral TikTok and Instagram Reel trends with millions of creator videos.",
+      "Sunny Camra's viral music catalog is distributed and promoted end-to-end by Anuj Media. We conceptualize and execute viral hook-point campaigns across Instagram Reels, launch targeted YouTube ads, and organize digital listening parties that catapult his singles into top-tier trending lists.",
+    promotionScope: [
+      "Viral Instagram Reels & TikTok sound seeding (1.2M+ creator videos)",
+      "High-velocity YouTube Music premiere campaigns",
+      "College fest & youth demographic digital targeting",
+      "Single release rollout strategy & fan engagement funnels",
+    ],
     stats: {
-      streams: "124M+",
-      releases: "12 Singles",
+      streams: "124M+ Total Reach",
+      releases: "12 Distributed Singles",
       chartPeak: "#1 Trending YouTube",
       listeners: "3.1M Monthly",
     },
@@ -247,9 +291,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Camra Flow",
       artist: "Sunny Camra",
       duration: "3:10",
-      streams: "48.6M",
+      streams: "48.6M Plays",
       year: "2024",
-      badge: "Viral Reels Hit (#1)",
+      badge: "Promoted #1 Viral Track",
     },
     topTracks: [
       "Camra Flow",
@@ -271,14 +315,21 @@ export const musicCatalog: SongEntity[] = [
     name: "Raagverse",
     logo: "/logos/7.jpeg",
     category: "Indie & Fusion",
+    distributionRole: "Algorithmic Niche Distribution & Global PR",
     tagline: "Ancient Indian Raags Reimagined in the Metaverse",
     established: "2023",
     genre: ["Indian Neo-Classical", "Electronic Fusion", "Sitar & Synth", "Experimental"],
     description:
-      "A cutting-edge musical universe represented by the bold crimson 'R/' identity. Raagverse unites classical Indian ragas, sitar improvisations, and deep modular synth textures to create an otherworldly sonic experience.",
+      "Anuj Media spearheads the distribution and specialized promotional strategy for Raagverse. We place their boundary-pushing classical/electronic fusion into global indie tastemaker blogs, BBC Asian Network playlists, and niche algorithmic streaming stations.",
+    promotionScope: [
+      "Global indie tastemaker & cultural blog outreach",
+      "BBC Asian Network & overseas radio pitching",
+      "Bandcamp, SoundCloud & web3 music community seeding",
+      "Curated ambient & electronic fusion playlist placement",
+    ],
     stats: {
-      streams: "28M+",
-      releases: "14 Tracks",
+      streams: "28M+ Promoted",
+      releases: "14 Distributed",
       chartPeak: "#1 Indie Fusion",
       listeners: "780K Monthly",
     },
@@ -286,9 +337,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Bhairavi Modern",
       artist: "Arjun Pandit ft. Raagverse",
       duration: "4:22",
-      streams: "9.8M",
+      streams: "9.8M Plays",
       year: "2024",
-      badge: "BBC Asian Network Pick",
+      badge: "Promoted Editorial Pick",
     },
     topTracks: [
       "Bhairavi Modern",
@@ -310,14 +361,21 @@ export const musicCatalog: SongEntity[] = [
     name: "AS Muzik Empire",
     logo: "/logos/8.jpeg",
     category: "Record Label",
+    distributionRole: "Platinum Commercial Distribution & Mega-Campaign Marketing",
     tagline: "The Royal Standard in Commercial Punjabi & Hits",
     established: "2017",
     genre: ["Commercial Punjabi", "High-Energy Bhangra", "Hip-Hop", "Romantic Ballads"],
     description:
-      "Emblazoned with the golden crown crest and victory laurel wreath, AS Muzik Empire is a premier music brand delivering blockbuster releases, chart-topping wedding & club anthems, and international cross-border hits.",
+      "AS Muzik Empire partners with Anuj Media as its official digital distributor and promotional engine. We manage high-budget album launches, multi-million view YouTube premiere blitzes, Spotify India Top 50 campaigns, and wedding-season dancefloor audio pushes.",
+    promotionScope: [
+      "Multi-million view YouTube launch & premiere campaigns",
+      "Spotify India Top 50 & Billboard India chart push",
+      "Influencer dance challenge rollouts across Instagram",
+      "Comprehensive digital copyright, sync & publishing protection",
+    ],
     stats: {
-      streams: "165M+",
-      releases: "50+ Tracks",
+      streams: "165M+ Promoted",
+      releases: "50+ Distributed",
       chartPeak: "#1 Billboard India",
       listeners: "4.2M Monthly",
     },
@@ -325,9 +383,9 @@ export const musicCatalog: SongEntity[] = [
       title: "Royal Hustle",
       artist: "Amanpreet Singh & Star Crew",
       duration: "3:35",
-      streams: "62.4M",
+      streams: "62.4M Streams",
       year: "2024",
-      badge: "Platinum Certified",
+      badge: "Promoted Platinum Hit",
     },
     topTracks: [
       "Royal Hustle",

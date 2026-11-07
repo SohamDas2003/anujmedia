@@ -4,9 +4,9 @@ import Image from "next/image";
 import SongsCatalog from "./SongsCatalog";
 
 export const metadata: Metadata = {
-  title: "Our Songs & Record Labels Roster",
+  title: "Music Distribution & Song Promotion — Official Roster",
   description:
-    "Explore chart-topping music releases, powerhouse record labels, recording studios, and featured artists distributed and marketed by Anuj Media across India and globally.",
+    "Anuj Media is the digital distribution and promotional partner for leading music labels, artists, and studios. Discover the chart-topping songs we distribute and market across India and worldwide.",
 };
 
 export default function OurSongsPage() {
@@ -16,32 +16,33 @@ export default function OurSongsPage() {
       <section className="page-hero songs-page-hero">
         <div className="wrap">
           <div className="reveal">
-            <span className="eyebrow">Music &amp; Entertainment Roster</span>
-            <h1>Our Songs, Premier Labels &amp; Chart-Topping Hits.</h1>
+            <span className="eyebrow">Digital Music Distribution &amp; Promotion</span>
+            <h1>Songs &amp; Record Labels We Distribute &amp; Promote.</h1>
             <p>
-              From underground sensations to multi-platinum anthems. Discover the
-              record labels, sound engineering studios, and featured artists
-              powered by Anuj Media&apos;s pan-India digital distribution and viral
-              marketing engine.
+              We are the digital distribution powerhouse and promotional growth
+              partner behind India&apos;s premier music labels, independent recording
+              studios, and breakthrough artists. From seamless 150+ DSP delivery
+              to viral Instagram Reels seeding and YouTube ad blitzes, we turn
+              audio masters into multi-million streaming movements.
             </p>
 
             {/* Quick Stats Strip */}
             <div className="songs-hero-stats">
               <div className="song-stat-card">
                 <span className="stat-num">350M+</span>
-                <span className="stat-label">Total Streaming Views</span>
+                <span className="stat-label">Promoted Views &amp; Streams</span>
               </div>
               <div className="song-stat-card">
                 <span className="stat-num">8+</span>
-                <span className="stat-label">Partner Labels &amp; Artists</span>
+                <span className="stat-label">Partner Labels &amp; Catalogs</span>
               </div>
               <div className="song-stat-card">
                 <span className="stat-num">50+</span>
-                <span className="stat-label">Trending Releases</span>
+                <span className="stat-label">Distributed Releases</span>
               </div>
               <div className="song-stat-card">
-                <span className="stat-num">100%</span>
-                <span className="stat-label">Pan-India Reach</span>
+                <span className="stat-num">150+</span>
+                <span className="stat-label">Global Streaming Stores (DSPs)</span>
               </div>
             </div>
           </div>
@@ -52,12 +53,13 @@ export default function OurSongsPage() {
       <section className="section" style={{ background: "var(--paper-alt)" }}>
         <div className="wrap">
           <div className="section-head reveal">
-            <span className="eyebrow">Label Showcase</span>
-            <h2>Official Music Brands &amp; Production Partners</h2>
+            <span className="eyebrow">Distribution &amp; Promotion Roster</span>
+            <h2>Music Brands &amp; Production Houses in Our Distribution Network</h2>
             <p>
-              Each label brings a distinct sound identity—from high-energy Punjabi
-              dancefloor bangers to acoustic melodies and futuristic neo-classical
-              fusion. Click any label to inspect their full discography dossier.
+              Each label and artist below trusts Anuj Media for their worldwide
+              digital distribution, Spotify &amp; Apple Music playlist pitching,
+              YouTube SEO optimization, and viral social media campaigns. Click any
+              card to inspect our distribution scope and promotional milestones.
             </p>
           </div>
 
@@ -69,11 +71,12 @@ export default function OurSongsPage() {
       <section className="section" style={{ background: "var(--paper)" }}>
         <div className="wrap">
           <div className="section-head reveal">
-            <span className="eyebrow">Chart Highlights</span>
-            <h2>Top Trending Hits From Our Network</h2>
+            <span className="eyebrow">Promotional Milestones</span>
+            <h2>Top Trending Releases Distributed &amp; Promoted by Us</h2>
             <p>
-              Catch the biggest anthems currently dominating Spotify India Viral
-              50, Apple Music charts, and Instagram Reels trends.
+              Explore standout campaigns where our digital distribution network and
+              viral promotional strategies fueled chart-topping success on Spotify
+              India, YouTube, and Instagram Reels.
             </p>
           </div>
 
@@ -91,11 +94,11 @@ export default function OurSongsPage() {
                 />
               </div>
               <div className="spotlight-content">
-                <span className="spotlight-tag">Platinum Chartbuster</span>
+                <span className="spotlight-tag">Distributed &amp; Promoted</span>
                 <h4>Royal Hustle</h4>
                 <p className="spotlight-meta">Amanpreet Singh &bull; AS Muzik Empire</p>
                 <div className="spotlight-stats">
-                  <span>62.4M Streams</span>
+                  <span>62.4M Promoted Streams</span>
                   <span>&bull;</span>
                   <span>1.4M Reels</span>
                 </div>
@@ -115,11 +118,11 @@ export default function OurSongsPage() {
                 />
               </div>
               <div className="spotlight-content">
-                <span className="spotlight-tag">Viral Sensation</span>
+                <span className="spotlight-tag">Viral Reel Campaign</span>
                 <h4>Camra Flow</h4>
-                <p className="spotlight-meta">Sunny Camra &bull; Solo Sensation</p>
+                <p className="spotlight-meta">Sunny Camra &bull; Artist Promotion</p>
                 <div className="spotlight-stats">
-                  <span>48.6M Streams</span>
+                  <span>48.6M Views</span>
                   <span>&bull;</span>
                   <span>Trending #1</span>
                 </div>
@@ -139,7 +142,7 @@ export default function OurSongsPage() {
                 />
               </div>
               <div className="spotlight-content">
-                <span className="spotlight-tag">OTT Soundscape</span>
+                <span className="spotlight-tag">OTT Sync &amp; Distribution</span>
                 <h4>Empire Groove</h4>
                 <p className="spotlight-meta">Sameer Sen &bull; Music Empire</p>
                 <div className="spotlight-stats">
@@ -163,13 +166,13 @@ export default function OurSongsPage() {
                 />
               </div>
               <div className="spotlight-content">
-                <span className="spotlight-tag">Folk Trap Anthem</span>
+                <span className="spotlight-tag">Club Video Marketing</span>
                 <h4>Sher-E-Punjab</h4>
                 <p className="spotlight-meta">Harkirat Sandhu &bull; Leotech Media 89</p>
                 <div className="spotlight-stats">
-                  <span>26.4M Streams</span>
+                  <span>26.4M YouTube Views</span>
                   <span>&bull;</span>
-                  <span>Club Favorite</span>
+                  <span>Club Push</span>
                 </div>
               </div>
             </div>
@@ -187,7 +190,7 @@ export default function OurSongsPage() {
                 />
               </div>
               <div className="spotlight-content">
-                <span className="spotlight-tag">Radio Top 10</span>
+                <span className="spotlight-tag">Radio &amp; DSP Syndication</span>
                 <h4>Positive Vibe Only</h4>
                 <p className="spotlight-meta">Dev Chauhan &bull; Positive Studios</p>
                 <div className="spotlight-stats">
@@ -211,13 +214,13 @@ export default function OurSongsPage() {
                 />
               </div>
               <div className="spotlight-content">
-                <span className="spotlight-tag">Acoustic Pop</span>
+                <span className="spotlight-tag">Algorithmic Push</span>
                 <h4>Rhythm of Gold</h4>
                 <p className="spotlight-meta">Aarav &amp; Simran &bull; All Good Music</p>
                 <div className="spotlight-stats">
                   <span>14.8M Streams</span>
                   <span>&bull;</span>
-                  <span>Spotify Viral</span>
+                  <span>Spotify Viral 50</span>
                 </div>
               </div>
             </div>
@@ -225,16 +228,17 @@ export default function OurSongsPage() {
         </div>
       </section>
 
-      {/* How Anuj Media Powers Music Success */}
+      {/* How Anuj Media Powers Music Distribution & Promotion */}
       <section className="section music-growth-section">
         <div className="wrap">
           <div className="section-head reveal" style={{ maxWidth: "720px" }}>
-            <span className="eyebrow">The Growth Engine</span>
-            <h2>How Anuj Media Accelerates Music Brands &amp; Hit Records</h2>
+            <span className="eyebrow">Our Distribution &amp; Marketing Engine</span>
+            <h2>How Anuj Media Distributes &amp; Promotes Hit Songs</h2>
             <p>
-              We don&apos;t just release songs—we build multi-platform growth
-              funnels that turn audio tracks into cultural movements across Delhi,
-              Mumbai, Punjab, and beyond.
+              We provide end-to-end release management. We don&apos;t just deliver
+              audio files to DSPs—we engineer multi-platform promotional campaigns
+              that ignite social virality, maximize streaming royalties, and build
+              lasting fanbases across India and worldwide.
             </p>
           </div>
 
@@ -252,16 +256,16 @@ export default function OurSongsPage() {
                   <path d="M8 12l8-5v10z" />
                 </svg>
               </div>
-              <h3>Worldwide Digital Distribution</h3>
+              <h3>150+ Store Digital Distribution</h3>
               <p>
-                Seamless ingestion and metadata optimization across 150+ streaming
-                platforms including Spotify, Apple Music, YouTube, Amazon Music,
-                JioSaavn, and Wynk.
+                Rapid, high-priority delivery to Spotify, Apple Music, YouTube
+                Music, Amazon, JioSaavn, Wynk, and international streaming stores
+                with verified artist profiles and ISRC/UPC generation.
               </p>
               <ul className="cap-list">
-                <li>Pre-save &amp; smart link funnels</li>
-                <li>Dolby Atmos &amp; Hi-Res audio delivery</li>
-                <li>Automated royalty reporting &amp; split tracking</li>
+                <li>Instant delivery to 150+ worldwide DSPs</li>
+                <li>Lossless audio &amp; Dolby Atmos mastering support</li>
+                <li>Transparent royalty reporting &amp; automated splits</li>
               </ul>
             </div>
 
@@ -278,16 +282,16 @@ export default function OurSongsPage() {
                   <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
                 </svg>
               </div>
-              <h3>Viral Social Seeding &amp; Reels</h3>
+              <h3>Viral Social Seeding &amp; Reels Promotion</h3>
               <p>
-                We ignite song hooks on Instagram Reels, YouTube Shorts, and
-                creator networks. Our campaigns have seeded audio into millions of
-                user videos.
+                We seed your song hooks into top creator networks across Instagram
+                Reels, YouTube Shorts, and Moj, sparking dance trends, lip-syncs,
+                and millions of user-generated videos.
               </p>
               <ul className="cap-list">
-                <li>Top lifestyle &amp; dance creator tie-ups</li>
-                <li>Choreography &amp; hook-point identification</li>
-                <li>Algorithmic trending trigger strategies</li>
+                <li>Tier-1 lifestyle, dance &amp; comedy creator seeding</li>
+                <li>Hook-point audio clipping &amp; viral trend planning</li>
+                <li>Audio-link click funnels driving Spotify saves</li>
               </ul>
             </div>
 
@@ -303,16 +307,16 @@ export default function OurSongsPage() {
                   <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
               </div>
-              <h3>Editorial Playlisting &amp; PR</h3>
+              <h3>Editorial Playlisting &amp; PR Blasts</h3>
               <p>
-                Direct pitch representation to regional and global music editors.
-                Get featured on New Music Friday India, Punjabi 101, Bollywood
-                Butter, and Indie India.
+                Direct pitch representation to Spotify, Apple Music, and JioSaavn
+                editorial curators, complemented by national press releases, music
+                blog features, and regional radio interviews.
               </p>
               <ul className="cap-list">
-                <li>Curator relationship management</li>
-                <li>Press releases in Rolling Stone India &amp; music blogs</li>
-                <li>Radio interviews across Delhi, Mumbai &amp; Chandigarh</li>
+                <li>Curator pitching for New Music Friday &amp; regional hubs</li>
+                <li>Interviews across Delhi, Mumbai &amp; Punjab radio stations</li>
+                <li>Digital press in top Indian music magazines &amp; portals</li>
               </ul>
             </div>
 
@@ -330,16 +334,16 @@ export default function OurSongsPage() {
                   <line x1="12" y1="17" x2="12" y2="21" />
                 </svg>
               </div>
-              <h3>Sync Licensing &amp; OTT Placement</h3>
+              <h3>YouTube SEO &amp; Sync Licensing</h3>
               <p>
-                Monetize your masters beyond streaming. We pitch your songs for
-                feature films, web series on Netflix and Prime Video, and high-budget
-                commercial television ads.
+                We run high-converting YouTube discovery ads, manage Content ID
+                claiming, and pitch songs for synchronization in OTT series on
+                Netflix, Prime Video, and commercial TV advertisements.
               </p>
               <ul className="cap-list">
-                <li>Sync clearance &amp; master rights protection</li>
-                <li>Brand collaboration &amp; product placement</li>
-                <li>Original score &amp; title track pitching</li>
+                <li>Targeted YouTube video discovery &amp; bumper ads</li>
+                <li>Full Content ID monetization &amp; piracy protection</li>
+                <li>OTT web-series &amp; brand commercial synchronization</li>
               </ul>
             </div>
           </div>
@@ -350,7 +354,7 @@ export default function OurSongsPage() {
       <section className="music-marquee-bar">
         <div className="wrap">
           <p className="marquee-title">
-            Distributing &amp; Pitching Across Global Music Ecosystems
+            Distributing &amp; Pitching Your Music Across 150+ Global DSPs &amp; Outlets
           </p>
           <div className="marquee-pills">
             <span>Spotify</span>
@@ -378,20 +382,21 @@ export default function OurSongsPage() {
       <section className="section cta-section" style={{ background: "var(--surface-dark)", color: "var(--text-inverse)" }}>
         <div className="wrap" style={{ textAlign: "center" }}>
           <div className="reveal" style={{ maxWidth: "680px", margin: "0 auto" }}>
-            <span className="eyebrow">Launch Your Next Single</span>
+            <span className="eyebrow">Ready for Your Next Release?</span>
             <h2 style={{ color: "#fff", marginTop: "12px" }}>
-              Are You an Artist, Producer, or Record Label?
+              Looking for Digital Distribution &amp; Viral Music Promotion?
             </h2>
             <p style={{ color: "var(--muted-inverse)", margin: "16px auto 28px", fontSize: "1.08rem" }}>
-              Scale your tracks to millions of listeners with tailored performance
-              marketing, Spotify playlist pitching, and viral social seeding.
+              Partner with Anuj Media. We handle worldwide store delivery, playlist
+              pitching, YouTube ad campaigns, and creator Reels seeding to guarantee
+              your tracks reach millions of high-intent listeners.
             </p>
             <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link
-                href="/contact?service=Music%20Marketing"
+                href="/contact?service=Music%20Distribution%20%26%20Promotion"
                 className="btn btn-hero-primary"
               >
-                Launch Music Campaign &rarr;
+                Distribute &amp; Promote Your Song &rarr;
               </Link>
               <Link
                 href="/services"
