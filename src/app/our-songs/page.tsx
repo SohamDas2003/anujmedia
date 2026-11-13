@@ -29,15 +29,15 @@ export default function OurSongsPage() {
             {/* Quick Stats Strip */}
             <div className="songs-hero-stats">
               <div className="song-stat-card">
-                <span className="stat-num">350M+</span>
+                <span className="stat-num">500M+</span>
                 <span className="stat-label">Promoted Views &amp; Streams</span>
               </div>
               <div className="song-stat-card">
-                <span className="stat-num">8+</span>
+                <span className="stat-num">10+</span>
                 <span className="stat-label">Partner Labels &amp; Catalogs</span>
               </div>
               <div className="song-stat-card">
-                <span className="stat-num">50+</span>
+                <span className="stat-num">65+</span>
                 <span className="stat-label">Distributed Releases</span>
               </div>
               <div className="song-stat-card">
@@ -86,6 +86,30 @@ export default function OurSongsPage() {
               <div className="spotlight-rank">#01</div>
               <div className="spotlight-logo-wrap">
                 <Image
+                  src="/logos/9.jpeg"
+                  alt="Sandeep Surila"
+                  width={64}
+                  height={64}
+                  className="spotlight-logo"
+                />
+              </div>
+              <div className="spotlight-content">
+                <span className="spotlight-tag">Mega Viral Sensation</span>
+                <h4>Ke Legi Muh Dikhawan Ka</h4>
+                <p className="spotlight-meta">Sandeep Surila &bull; Artist Promotion</p>
+                <div className="spotlight-stats">
+                  <span>85M+ Views</span>
+                  <span>&bull;</span>
+                  <span>2.2M Reels</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Track 2 */}
+            <div className="spotlight-card reveal">
+              <div className="spotlight-rank">#02</div>
+              <div className="spotlight-logo-wrap">
+                <Image
                   src="/logos/8.jpeg"
                   alt="AS Muzik Empire"
                   width={64}
@@ -105,9 +129,9 @@ export default function OurSongsPage() {
               </div>
             </div>
 
-            {/* Track 2 */}
+            {/* Track 3 */}
             <div className="spotlight-card reveal">
-              <div className="spotlight-rank">#02</div>
+              <div className="spotlight-rank">#03</div>
               <div className="spotlight-logo-wrap">
                 <Image
                   src="/logos/6.jpeg"
@@ -129,9 +153,33 @@ export default function OurSongsPage() {
               </div>
             </div>
 
-            {/* Track 3 */}
+            {/* Track 4 */}
             <div className="spotlight-card reveal">
-              <div className="spotlight-rank">#03</div>
+              <div className="spotlight-rank">#04</div>
+              <div className="spotlight-logo-wrap">
+                <Image
+                  src="/logos/10.jpeg"
+                  alt="Daaku Records"
+                  width={64}
+                  height={64}
+                  className="spotlight-logo"
+                />
+              </div>
+              <div className="spotlight-content">
+                <span className="spotlight-tag">Drill &amp; Outlaw Folk</span>
+                <h4>Daaku Kaafila</h4>
+                <p className="spotlight-meta">Daaku Records Crew &bull; Label Push</p>
+                <div className="spotlight-stats">
+                  <span>18.4M Views</span>
+                  <span>&bull;</span>
+                  <span>Club Favorite</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Track 5 */}
+            <div className="spotlight-card reveal">
+              <div className="spotlight-rank">#05</div>
               <div className="spotlight-logo-wrap">
                 <Image
                   src="/logos/5.jpeg"
@@ -153,9 +201,9 @@ export default function OurSongsPage() {
               </div>
             </div>
 
-            {/* Track 4 */}
+            {/* Track 6 */}
             <div className="spotlight-card reveal">
-              <div className="spotlight-rank">#04</div>
+              <div className="spotlight-rank">#06</div>
               <div className="spotlight-logo-wrap">
                 <Image
                   src="/logos/2.jpeg"
@@ -173,54 +221,6 @@ export default function OurSongsPage() {
                   <span>26.4M YouTube Views</span>
                   <span>&bull;</span>
                   <span>Club Push</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Track 5 */}
-            <div className="spotlight-card reveal">
-              <div className="spotlight-rank">#05</div>
-              <div className="spotlight-logo-wrap">
-                <Image
-                  src="/logos/4.jpeg"
-                  alt="Positive Studios"
-                  width={64}
-                  height={64}
-                  className="spotlight-logo"
-                />
-              </div>
-              <div className="spotlight-content">
-                <span className="spotlight-tag">Radio &amp; DSP Syndication</span>
-                <h4>Positive Vibe Only</h4>
-                <p className="spotlight-meta">Dev Chauhan &bull; Positive Studios</p>
-                <div className="spotlight-stats">
-                  <span>19.3M Streams</span>
-                  <span>&bull;</span>
-                  <span>National Airplay</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Track 6 */}
-            <div className="spotlight-card reveal">
-              <div className="spotlight-rank">#06</div>
-              <div className="spotlight-logo-wrap">
-                <Image
-                  src="/logos/1.jpeg"
-                  alt="All Good Music"
-                  width={64}
-                  height={64}
-                  className="spotlight-logo"
-                />
-              </div>
-              <div className="spotlight-content">
-                <span className="spotlight-tag">Algorithmic Push</span>
-                <h4>Rhythm of Gold</h4>
-                <p className="spotlight-meta">Aarav &amp; Simran &bull; All Good Music</p>
-                <div className="spotlight-stats">
-                  <span>14.8M Streams</span>
-                  <span>&bull;</span>
-                  <span>Spotify Viral 50</span>
                 </div>
               </div>
             </div>
